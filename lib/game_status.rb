@@ -34,3 +34,7 @@ end
 def over?(board)
   won?(board) or draw?(board) or full?(board)
 end
+
+def winner?(board)
+  
+end

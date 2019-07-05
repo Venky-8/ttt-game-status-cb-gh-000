@@ -19,6 +19,7 @@ def won?(board)
   win_arr = cmp_win
   if(win_arr == null)
     false
+  end
   win_arr
 end
 

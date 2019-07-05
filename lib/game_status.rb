@@ -36,5 +36,5 @@ def over?(board)
 end
 
 def winner?(board)
-  ["X","O"].find {  }
+  ["X","O"].find { |i| board[won?(board)[0]] == i }
 end

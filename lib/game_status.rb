@@ -30,3 +30,7 @@ end
 def draw?(board)
   full?(board) and won?(board) == nil
 end
+
+def over?(board)
+  won?(board) or draw?(board) or full?(board) 
+end

@@ -16,19 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  win_arr = cmp_win
-  if(win_arr == null)
-    false
+  WIN_COMBINATIONS.find do |indexes|
+    ["X", "O"].any? do |c|
+      indexes.all?{|i| board[i]==c}
+    end
   end
-  win_arr
-end
-
-def cmp_win(board)
-  WIN_COMBINATIONS.find{|win|
-    position_taken?(board, win[0]) and
-    position_taken?(board, win[1]) and
-    position_taken?(board, win[2])
-  }
 end
 
 def full?(board)

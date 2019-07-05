@@ -21,7 +21,6 @@ def won?(board)
     position_taken?(board, win[1]) and
     position_taken?(board, win[2])
   }
-  draw?(board)
 end
 
 def full?(board)
@@ -29,5 +28,5 @@ def full?(board)
 end
 
 def draw?(board)
-  !won?(board) and full?(board)
+  full?(board) and won?(board) == nil
 end

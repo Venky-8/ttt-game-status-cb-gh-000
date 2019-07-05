@@ -32,5 +32,5 @@ def draw?(board)
 end
 
 def over?(board)
-  won?(board) or draw?(board) or full?(board) 
+  won?(board) or draw?(board) or full?(board)
 end
